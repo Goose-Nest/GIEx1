@@ -1,15 +1,12 @@
 const { copyFileSync, mkdirSync, rmSync } = require('fs');
 const { join } = require('path');
 
-const debugMode = process.argv.includes('--giex1-debug');
-
 const nativeUpdaterModule = require('./updater');
 
 const rgb = (r, g, b, text) => `\x1b[38;2;${r};${g};${b}m${text}\x1b[0m`;
-const log = (...args) => (debugMode || (args[0].startsWith && args[0].startsWith('Thanks'))) && console.log(`[GIEx1]`, ...args);
+const log = (...args) => console.log(`[GIEx1]`, ...args);
 
-log('Thanks for testing GIEx1, have fun! For debug logging run Discord from cmd with --giex1-debug');
-log('debug enabled!');
+log('got required');
 
 log('nativeUpdaterModule', nativeUpdaterModule);
 
