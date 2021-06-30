@@ -3,7 +3,6 @@ const { join } = require('path');
 
 const nativeUpdaterModule = require('./updater');
 
-const rgb = (r, g, b, text) => `\x1b[38;2;${r};${g};${b}m${text}\x1b[0m`;
 const log = (...args) => console.log(`[GIEx1]`, ...args);
 
 log('got required');
