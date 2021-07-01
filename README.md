@@ -1,5 +1,5 @@
 # GIEx1
-A new, unique (never done previously) injection method into Discord's desktop app.
+A new, unique injection method via replacing `updater` require path (Windows only).
 
 ## Method
 GIEx1 relies on Discord's new updater API (referred to as v2 in this document). v2 uses a native Rust library which the client (code within `app.asar`) `require`'s. By replacing this, you can get code execution within the `app.asar`. What this project does:
